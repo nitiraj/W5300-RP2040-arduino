@@ -62,7 +62,7 @@ void loop() {
   }
 }
 void print_network_info(void){
-  byte print_mac[] ={0,};
+  byte print_mac[] ={0,0,0,0,0,0};
   Serial.println("\r\n-------------------------------------------------");
   Serial.print("MAC        : ");
   Ethernet.MACAddress(print_mac);
