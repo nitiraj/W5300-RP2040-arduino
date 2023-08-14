@@ -1,9 +1,9 @@
-<b>Modified W5300 ethernet library to use with Arduino Mega 2560 (Can be used with other AVR based arduino boards by editing pin assignment)</b><br><br>
+<b>Modified W5300 ethernet library to use with Arduino Mega 2560 (Can be used with other AVR based arduino boards by editing pin assignment)</b><br>modified by Madhuri Vaghasia<br>
 <b>Project Documentation available at :</b><br>
 https://maker.wiznet.io/mvpatel/contest/w5300-custom-library-for-any-arduino-board-and-application/<br>
 <br>
 <b>Usage :</b><br>
-Replace ethernet library of your arduino installation directory with supplied ethernet library in W5300_any_Arduino_library/Ethernet to use it with W5300 TOE Shield and Arduino Mega<br>
+Replace ethernet library of your arduino installation directory with supplied ethernet library in <b>W5300_any_Arduino_library/Ethernet</b> to use it with W5300 TOE Shield and Arduino Mega<br>
 to use NTP time server need <a href="https://github.com/PaulStoffregen/Time">timelib</a> and for MQTT need <a href="https://github.com/knolleary/pubsubclient">pubsubclient</a> library.
 <br>
 <b>Modification Guide :</b><br>
