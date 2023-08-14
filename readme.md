@@ -1,3 +1,4 @@
+Modified W5300 ethernet library to use with Arduino Mega 2560 (Can be used with other AVR based arduino boards by editing pin assignment)<br><br>
 Project Documentation available at :<br>
 https://maker.wiznet.io/mvpatel/contest/w5300-custom-library-for-any-arduino-board-and-application/<br>
 <br>
