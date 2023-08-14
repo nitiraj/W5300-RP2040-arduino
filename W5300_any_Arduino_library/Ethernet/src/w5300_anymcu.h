@@ -1,14 +1,12 @@
 #ifndef	_W5300_ANYMCU_H_
 #define	_W5300_ANYMCU_H_
-
 #include <Arduino.h>
-
-
 #include <avr/io.h>
+// Assign W5300 DATA Lines to 8 bit port (PORTK used here)
 #define DATA_OUT  PORTK
 #define DATA_DIR  DDRK
 #define DATA_IN   PINK
-
+// Assign W5300 COntrol lines in any sequence to 6 pins of any port (PORTF used here)
 #define CTRL_OUT  PORTF
 #define CTRL_DIR  DDRF
 #define CTRL_IN   PINF
