@@ -9,11 +9,11 @@ The **ARDUINO** an **PlatformIO(built-in VSCode)** support the serial monitor. S
 
 ## Step 2: Prepare hardware
 
-1. Combine W5300 TOE Shield with STM32 Nucleo-144 board.
+1. Combine W5300 TOE Shield with Arduino Mega board.
 
 2. Connect ethernet cable to W5300 TOE Shield ethernet port.
 
-3. Connect STM32 Nucleo-144 board to desktop or laptop using 5 pin micro USB cable.
+3. Connect Arduino Mega board to desktop or laptop using USB cable.
 
 
 
@@ -83,9 +83,5 @@ Link
 -->
 
 
-[link-Chatserver]: https://github.com/Wiznet/W5300-TOE-Arduino/blob/main/Static/images/examples/ChatServer.jpg
-[link-advancedChatServer_1]: https://github.com/Wiznet/W5300-TOE-Arduino/blob/main/Static/images/examples/advancedChatServer_1.jpg
-[link-advancedChatServer_2]: https://github.com/Wiznet/W5300-TOE-Arduino/blob/main/Static/images/examples/advancedChatServer_2.jpg
-[link-advancedChatServer_serialLogs]: https://github.com/Wiznet/W5300-TOE-Arduino/blob/main/Static/images/examples/advancedChatServer_serialLogs.jpg
-[link-webServer]: https://github.com/Wiznet/W5300-TOE-Arduino/blob/main/Static/images/examples/advancedChatServer_serialLogs.jpg
+[link-project]: https://maker.wiznet.io/mvpatel/contest/w5300-custom-library-for-any-arduino-board-and-application/
 
