@@ -3,7 +3,8 @@ Project Documentation available at :<br>
 https://maker.wiznet.io/mvpatel/contest/w5300-custom-library-for-any-arduino-board-and-application/<br>
 <br>
 Usage :<br>
-Replace ethernet library of your arduino installation directory with supplied ethernet library to use it with W5300 TOE Shield and Arduino Mega
+Replace ethernet library of your arduino installation directory with supplied ethernet library to use it with W5300 TOE Shield and Arduino Mega<br>
+to use NTP time server need <a href="https://github.com/PaulStoffregen/Time">timelib</a> and for MQTT need <a href="https://github.com/knolleary/pubsubclient">pubsubclient</a> library.
 <br>
 Modification Guide :<br>
 edit w5300_anymcu.h with pin assignment of desired MCU<br>
