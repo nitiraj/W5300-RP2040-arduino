@@ -39,9 +39,9 @@ void w5300_setup_indirect_MR(void)
 	CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR1;
 	DATA_OUT = 0x01;
 	CTRL_OUT &= ~((1<<CS)+(1<<WR));
-	delayMicroseconds(1);
+	delayMicroseconds(2);
 	CTRL_OUT |= (1<<CS)+(1<<WR);  
-	delayMicroseconds(1);
+	delayMicroseconds(2);
 }
 
 // Read 16 Bit register of W5300 using 8 bit indirect addressing
@@ -52,34 +52,34 @@ uint16_t w5300_read_indirect(uint16_t addr)
 	  DATA_DIR = 0xFF; // Make data port Output
 	  CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR2;
 	  DATA_OUT = (addr>>8) & 0xFF;
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT &= ~((1<<CS)+(1<<WR));
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT |= (1<<CS)+(1<<WR);  
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  
 	  CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR3;
 	  DATA_OUT = addr & 0xFF;
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT &= ~((1<<CS)+(1<<WR));
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT |= (1<<CS)+(1<<WR);  
-	  delayMicroseconds(1); 
+	  delayMicroseconds(2); 
 	  
 	  DATA_DIR = 0x00; // Make data port input
 	  CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR4;
 	  CTRL_OUT &= ~((1<<CS)+(1<<RD));
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  dataL = DATA_IN;
 	  CTRL_OUT |= (1<<RD)+(1<<CS); 
-	  delayMicroseconds(1); 
+	  delayMicroseconds(2); 
 	  
 	  CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR5;
 	  CTRL_OUT &= ~((1<<CS)+(1<<RD));
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  dataH = (dataL<<8)+DATA_IN;
 	  CTRL_OUT |= (1<<RD)+(1<<CS); 
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  return dataH;
 }
 	
@@ -90,35 +90,34 @@ void w5300_write_indirect(uint16_t addr, uint16_t data1)
 	  DATA_DIR = 0xFF; // Make data port Output
 	  CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR2;
 	  DATA_OUT = (addr>>8) & 0xFF;
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT &= ~((1<<CS)+(1<<WR));
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT |= (1<<CS)+(1<<WR);  
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  
 	  CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR3;
 	  DATA_OUT = addr & 0xFF;
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT &= ~((1<<CS)+(1<<WR));
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT |= (1<<CS)+(1<<WR);  
-	  delayMicroseconds(1); 
-
+	  delayMicroseconds(2); 
 	  CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR4;
 	  DATA_OUT = (data1>>8) & 0xFF;
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT &= ~((1<<CS)+(1<<WR));
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT |= (1<<CS)+(1<<WR);  
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  
 	  CTRL_OUT = (1<<CS)+(1<<WR)+(1<<RD) + AR5;
 	  DATA_OUT = data1 & 0xFF;
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT &= ~((1<<CS)+(1<<WR));
-	  delayMicroseconds(1);
+	  delayMicroseconds(2);
 	  CTRL_OUT |= (1<<CS)+(1<<WR);  
-	  delayMicroseconds(1); 
+	  delayMicroseconds(2); 
 }
 	
 // Soft Reset W5300
