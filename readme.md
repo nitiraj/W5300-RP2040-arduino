@@ -1,4 +1,4 @@
-<b>Modified W5300 ethernet library to use with Arduino Mega 2560 (Can be used with other AVR based arduino boards by editing pin assignment)</b><br>modified by Madhuri Vaghasia<br><br>
+<b>Edited version of <a href="https://github.com/MadhuriVaghasia/W5300AnyArduino">Modified W5300 ethernet library by madhuri vaghasia</a>to use with Raspberry Pi Pico / RP2040 </b><br>Edited by N.J. Chhasatia<br><br>
 
 Shared library is modified version of this  <a href="https://github.com/Wiznet/W5300-TOE-Arduino">W5300 Arduino Library for ST Nucleo board</a><br><br>
 <b>Project Documentation available at :</b><br>
