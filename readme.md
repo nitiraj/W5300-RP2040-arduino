@@ -6,3 +6,6 @@
 <b>RP2040 Available pins for interface other peripherals</b><br>
 ![alt text](https://raw.githubusercontent.com/nitiraj/W5300-RP2040-arduino/main/w5300_rp2.JPG)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nitiraj/W5300-RP2040-arduino/main/w5300_rp1.JPG" width="350" title="hover text">
+</p>
